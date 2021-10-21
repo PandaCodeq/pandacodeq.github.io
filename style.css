@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500");
 
-input {
-  padding: 3px;
-  margin: 2px;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+input {
+  padding: 3px;
+  margin: 2px;
 }
 
 .nav_links li,
@@ -31,35 +31,44 @@ button {
 }
 
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 30px 10%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #242524;
+  place-items: center;
 }
 
-.logos {
-  cursor: pointer;
+.Header-left {
+  justify-self: start;
+  display: flex;
+  gap: 50px;
 }
 
 .nav_links {
   list-style: none;
   display: flex;
-  width: 400px;
-  gap: 55px;
+  justify-content: space-around;
+  gap: 50px;
 }
-.nav_links li {
-  display: inline-block;
-}
+
 .nav_links li a {
   transition: all 0.3s ease 0s;
 }
+
 .nav_links li a:hover {
   color: #d40e0e;
 }
 
+.header-right {
+  justify-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 120px;
+}
+
 button {
-  padding: 9px 25px;
+  padding: 4px 25px;
   background-color: rgb(233, 24, 24, 0.9);
   border: none;
   border-radius: 50px;
@@ -76,28 +85,29 @@ button {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 125px;
+  border-radius: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(206, 60, 60);
+  background-color: #242524;
+  color: white;
+  border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: rgb(233, 24, 24, 0.8);
-}
 .line_1 {
   height: 30px;
   width: 0.5px;
