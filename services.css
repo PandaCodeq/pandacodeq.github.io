@@ -1,17 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500");
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/*
 input {
   padding: 3px;
   margin: 2px;
 }
-*/
+
 button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -108,7 +106,6 @@ button {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 .line_1 {
   height: 30px;
   width: 0.5px;
@@ -116,8 +113,9 @@ button {
 }
 .footer {
   padding: 40px 0;
-  background-color: #ff7f7f;
+  background-color: #ffffff;
   color: #4b4c4d;
+  background-color: #ff7f7f;
 }
 
 .footer ul {
@@ -143,7 +141,7 @@ button {
   opacity: 1;
 }
 
-.footer .social {
+.footer {
   text-align: center;
   padding-bottom: 25px;
 }
