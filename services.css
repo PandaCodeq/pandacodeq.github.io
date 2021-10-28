@@ -26,6 +26,17 @@ header {
   background-color: #242524;
   place-items: center;
 }
+body {
+  background-image: url(./images/background.svg);
+}
+button {
+  padding: 4px 25px;
+  background-color: rgb(233, 24, 24, 0.9);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+}
 
 .nav_links li,
 .nav_links a {
@@ -66,15 +77,6 @@ header {
   gap: 120px;
 }
 
-button {
-  padding: 4px 25px;
-  background-color: rgb(233, 24, 24, 0.9);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3 ease 0s;
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -111,69 +113,56 @@ button {
   width: 0.5px;
   background-color: white;
 }
-.footer {
-  padding: 40px 0;
-  background-color: #ffffff;
-  color: #4b4c4d;
-  background-color: #ff7f7f;
-}
 
-.footer ul {
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 0;
-}
-
-.footer li {
-  padding: 0 10px;
-}
-
-.footer a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.footer ul a:hover {
-  opacity: 1;
-}
-
-.footer {
-  text-align: center;
-  padding-bottom: 25px;
-}
-
-.footer .social > a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  margin: 0 8px;
-  color: inherit;
-  opacity: 0.75;
-}
-
-.footer .social > a:hover {
-  opacity: 0.9;
-}
-
-.footer .copyright {
+.copyright {
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
-  color: white;
-  margin-bottom: 0;
+  color: grey;
 }
 
-.list-inline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.Services {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
 }
