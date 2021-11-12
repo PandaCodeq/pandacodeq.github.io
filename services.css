@@ -27,7 +27,8 @@ header {
   place-items: center;
 }
 body {
-  background-image: url(./images/background.svg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(./images/background.svg);
 }
 button {
   padding: 4px 25px;
@@ -125,6 +126,8 @@ button {
   float: left;
   width: 33.3%;
   padding: 8px;
+  transition: transform 350ms ease-in-out;
+  margin-top: 8%;
 }
 
 .price {
@@ -138,6 +141,7 @@ button {
 
 .price:hover {
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
 }
 
 .price .header {
@@ -157,24 +161,6 @@ button {
   font-size: 20px;
 }
 
-.Button {
-  background-color: #04aa6d;
-  border: none;
-  padding: 10px 25px;
-  text-align: center;
-  font-size: 18px;
-}
-
-.Button a {
-  text-decoration: none;
-  color: white;
-}
-
-.Button a:hover {
-  color: #111;
-  transition: 0.4s;
-}
-
 .box {
   display: flex;
   margin-top: 5%;
@@ -183,7 +169,7 @@ button {
 .button {
   display: block;
   width: 100%;
-  background-color: #04aa6d;
+  background-color: rgb(211, 60, 22);
   text-align: center;
   line-height: 4;
   color: white;
@@ -191,5 +177,5 @@ button {
 }
 
 .button:hover {
-  color: lightgreen;
+  color: rgb(241, 245, 21);
 }

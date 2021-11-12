@@ -12,14 +12,12 @@ button {
   font-size: 18px;
   color: #edf0f1;
   text-decoration: none;
-  background-color: #242524;
 }
 
 header {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #242524;
   place-items: center;
 }
 
@@ -30,13 +28,13 @@ header {
   font-size: 14px;
   color: #edf0f1;
   text-decoration: none;
-  background-color: #242524;
 }
 
 .Header-left {
   justify-self: start;
   display: flex;
   gap: 50px;
+  margin-left: 3.5%;
 }
 
 .nav_links {
@@ -49,9 +47,28 @@ header {
 .nav_links li a {
   transition: all 0.3s ease 0s;
 }
-
+/*
 .nav_links li a:hover {
   color: #d40e0e;
+}
+*/
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: rgba(207, 23, 23, 0.9);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
 }
 
 .header-right {
@@ -62,9 +79,9 @@ header {
   gap: 120px;
 }
 
-button {
+.dropbtn {
   padding: 4px 25px;
-  background-color: rgb(233, 24, 24, 0.9);
+  background-color: rgba(207, 23, 23, 0.9);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -107,4 +124,32 @@ button {
   height: 30px;
   width: 0.5px;
   background-color: white;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cont {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.cont h1 {
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+.cont p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
 }
