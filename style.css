@@ -250,3 +250,8 @@ span {
 .button:hover {
   color: rgb(241, 245, 21);
 }
+
+.cont p {
+  border: solid;
+  text-align: center;
+}
