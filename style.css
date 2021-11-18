@@ -137,7 +137,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .cont h1 {
@@ -251,7 +251,29 @@ span {
   color: rgb(241, 245, 21);
 }
 
-.cont p {
+.cont-box {
+  display: flex;
+  border: solid red;
+  flex-wrap: wrap;
+}
+
+.side-boxes {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-circles {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profiles {
+  width: 180px;
+  height: 100%;
+  border-radius: 100%;
   border: solid;
-  text-align: center;
+}
+.first-profile {
+  border: solid red;
 }
