@@ -277,3 +277,21 @@ span {
 .first-profile {
   border: solid red;
 }
+
+.agent-layout img {
+  width: 100%;
+  height: 100%;
+  border: solid;
+}
+
+.agent-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-auto-rows: 170px;
+  margin: 100px;
+}
+
+.agent-layout img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-out;
+}
