@@ -6,9 +6,20 @@
   padding: 0;
 }
 
-body {
+.banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-size: 100%;
+  background-color: #cccccc;
+  background-attachment: fixed;
+  border: solid;
+}
+
+.agents-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/7046907.jpg);
   background-size: cover;
   background-position: center;
   background-size: 100%;
@@ -281,17 +292,25 @@ span {
 .agent-layout img {
   width: 100%;
   height: 100%;
-  border: solid;
+  image-resolution: from-image;
 }
 
 .agent-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  grid-auto-rows: 170px;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  grid-auto-rows: 190px;
   margin: 100px;
+  gap: 20px;
 }
 
 .agent-layout img:hover {
   transform: scale(1.1);
   transition: 0.3s ease-out;
+  background-color: greenyellow;
+  border-radius: 10%;
+}
+
+.Agent {
+  border: double red;
+  border-radius: 10%;
 }
