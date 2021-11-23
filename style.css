@@ -306,7 +306,7 @@ span {
 .agent-layout img:hover {
   transform: scale(1.1);
   transition: 0.3s ease-out;
-  background-color: greenyellow;
+  background-color: red;
   border-radius: 10%;
 }
 
