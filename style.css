@@ -6,6 +6,8 @@
   padding: 0;
 }
 
+/* BACKGROUND */
+
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./images/banner.jpg);
@@ -25,6 +27,12 @@
   background-color: #cccccc;
   background-attachment: fixed;
 }
+
+.maps_cont {
+  background: black;
+}
+
+/* GENERAL STUFF */
 
 button {
   font-family: "Montserrat", sans-serif;
@@ -141,7 +149,7 @@ header {
   width: 0.5px;
   background-color: white;
 }
-
+/* HOME */
 .cont {
   color: #fff;
   display: flex;
@@ -161,6 +169,13 @@ header {
   line-height: 25px;
 }
 
+.profile-circles {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1em;
+  gap: 1%;
+}
+/* SERVICES */
 .copyright {
   margin-top: 15px;
   text-align: center;
@@ -226,24 +241,7 @@ header {
   color: rgb(241, 245, 21);
 }
 
-.cont-box {
-  display: flex;
-  border: solid red;
-  flex-wrap: wrap;
-}
-
-.side-boxes {
-  display: flex;
-  justify-content: center;
-}
-
-.profile-circles {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1em;
-  gap: 1%;
-}
-
+/* AGENTS */
 .agent-layout img {
   width: 100%;
   height: 100%;
@@ -260,12 +258,96 @@ header {
 
 .agent-layout img:hover {
   transform: scale(1.1);
-  transition: all 0.3s ease-in-out 0.8;
-  background-color: red;
+  transition: all 0.3s ease 0.8;
+  background-color: white;
   border-radius: 10%;
 }
 
 .Agent {
-  border: double red;
+  border: solid red;
   border-radius: 10%;
+}
+
+/* MAPS */
+
+.maps {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 5vw);
+  grid-gap: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.maps_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.Ascent {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.Bind {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.Breeze {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.Fracture {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.Haven {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.Icebox {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.Split {
+  grid-column: 1/-1;
+  grid-row: 9/11;
+}
+
+.column {
+  position: relative;
+}
+.column .text {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+.column .text h1 {
+  color: white;
+}
+.column:hover .text {
+  opacity: 1;
 }
