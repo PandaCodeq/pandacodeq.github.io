@@ -14,7 +14,6 @@
   background-size: 100%;
   background-color: #cccccc;
   background-attachment: fixed;
-  border: solid;
 }
 
 .agents-background {
@@ -162,41 +161,6 @@ header {
   line-height: 25px;
 }
 
-.cont-btn {
-  width: 200px;
-  padding: 15px 0;
-  text-align: center;
-  margin: 20px 10px;
-  border-radius: 25px;
-  font-weight: bold;
-  border: 2px solid rgba(207, 23, 23, 0.9);
-  background: transparent;
-  color: #fff;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-span {
-  background: rgba(207, 23, 23, 0.9);
-  height: 100%;
-  width: 0;
-  border-radius: 25px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: 0.5s;
-}
-
-.cont-btn:hover span {
-  width: 100%;
-}
-
-.cont-btn:hover {
-  border: none;
-}
-
 .copyright {
   margin-top: 15px;
   text-align: center;
@@ -274,19 +238,10 @@ span {
 }
 
 .profile-circles {
+  display: grid;
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.profiles {
-  width: 180px;
-  height: 100%;
-  border-radius: 100%;
-  border: solid;
-}
-.first-profile {
-  border: solid red;
+  grid-template-columns: 1em;
+  gap: 1%;
 }
 
 .agent-layout img {
@@ -305,7 +260,7 @@ span {
 
 .agent-layout img:hover {
   transform: scale(1.1);
-  transition: 0.3s ease-out;
+  transition: all 0.3s ease-in-out 0.8;
   background-color: red;
   border-radius: 10%;
 }
