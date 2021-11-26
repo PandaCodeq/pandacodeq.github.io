@@ -20,7 +20,7 @@
 
 .agents-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/7046907.jpg);
+    url(./images/agent-background-generic.JPG);
   background-size: cover;
   background-position: center;
   background-size: 100%;
@@ -29,6 +29,10 @@
 }
 
 .maps_cont {
+  background: black;
+}
+
+.weapons_cont {
   background: black;
 }
 
@@ -264,7 +268,6 @@ header {
 }
 
 .Agent {
-  border: solid red;
   border-radius: 10%;
 }
 
@@ -350,4 +353,150 @@ header {
 }
 .column:hover .text {
   opacity: 1;
+}
+
+/* WEAPONS */
+
+.weapons {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 15px;
+  margin: 2%;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.weapons_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: solid gray 1px;
+  border-radius: 20px;
+}
+
+.Classic {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.Shorty {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.Frenzy {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.Ghost {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.Sheriff {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.Stinger {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.Spectre {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.Bucky {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.Judge {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.Bulldog {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.Guardian {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.Phantom {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.Vandal {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+
+.Marshal {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+
+.Operator {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+
+.Ares {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+.Odin {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 9;
+  grid-row-end: 11;
+}
+
+.Knife {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 9;
+  grid-row-end: 11;
 }
